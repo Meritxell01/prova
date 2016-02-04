@@ -1,0 +1,9 @@
+UPDATE `mcb_invoices` 
+INNER JOIN `mcb_payments` ON `mcb_invoices`.`invoice_id` =
+`mcb_payments`.`invoice_id`
+SET `mcb_invoices`.`payment_date` = `mcb_payments`.`payment_date`
+
+UPDATE `mcb_invoices` 
+INNER JOIN `mcb_payments` ON `mcb_invoices`.`invoice_id` =
+`mcb_payments`.`invoice_id`
+SET `mcb_invoices`.`payment_method_id` = `mcb_payments`.`payment_method_id`
